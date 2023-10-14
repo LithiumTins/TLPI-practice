@@ -1,0 +1,17 @@
+#include <utmpx.h>
+#include <unistd.h>
+#include <string.h>
+#include <errno.h>
+
+char *my_getlogin(void)
+{
+    struct utmpx ut, *search;
+    char *name = ttyname(STDIN_FILENO);
+    if (name == NULL)
+        return NULL;
+    strcpy(ut.ut_line, name);
+    search = getutxline(&ut);
+    if (search == NULL)
+        return NULL;
+    return search->ut_user;
+}

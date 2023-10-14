@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "signal.h": "c",
+        "sigaction.h": "c",
+        "stdlib.h": "c",
+        "signum-generic.h": "c",
+        "signum-arch.h": "c",
+        "tlpi_hdr.h": "c",
+        "40-1-my_getlogin": "c",
+        "stdio.h": "c",
+        "__file.h": "c",
+        "file.h": "c",
+        "stat.h": "c",
+        "cmath": "c",
+        "sockaddr.h": "c",
+        "in.h": "c",
+        "time.h": "c",
+        "unistd.h": "c",
+        "limits.h": "c"
+    }
+}
